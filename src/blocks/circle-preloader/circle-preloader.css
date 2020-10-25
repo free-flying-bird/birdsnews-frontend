@@ -1,0 +1,33 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+@keyframes rotation {
+  0% {
+      transform:rotate(0deg);
+  }
+  100% {
+      transform:rotate(360deg);
+  }
+}
+
+.circle-preloader {
+  background-image: url('../../images/Ellipse.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #f5f6f7;
+  border-radius: 50px;
+  border-color: tomato;
+  border-bottom: violet;
+  width: 50px;
+  height: 50px;
+  animation-name: rotation;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

@@ -1,0 +1,21 @@
+.author__title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1A1B22;
+}
+
+@media screen and (max-width: 1024px) {
+  .author__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .author__title {
+    margin: 0 auto;
+  }
+}

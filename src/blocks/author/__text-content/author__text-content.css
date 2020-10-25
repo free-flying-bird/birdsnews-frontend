@@ -1,0 +1,30 @@
+.author__text-content {
+  margin-left: 56px;
+  color: #1A1B22;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+  .author__text-content {
+    max-width: 600px;
+    margin-left: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .author__text-content {
+    max-width: 424px;
+    margin-left: 32px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .author__text-content {
+    margin: 32px auto 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .author__text-content {
+    max-width: 288px;
+  }
+}

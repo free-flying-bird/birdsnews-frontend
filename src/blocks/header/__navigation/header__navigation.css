@@ -1,0 +1,29 @@
+.header__navigation {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  z-index: 3;
+}
+@media screen and (max-width: 720px) {
+  .header__navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 50%;
+    left: 0;
+    background-color: #1A1B22;
+    max-height: 230px;
+    z-index: 0;
+    display: grid;
+    grid-template-rows: 56px 56px 56px;
+    justify-content: left;
+    padding-top: 80px;
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__navigation {
+    padding-left: 16px;
+  }
+}

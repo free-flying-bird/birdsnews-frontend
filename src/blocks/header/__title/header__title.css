@@ -1,0 +1,15 @@
+@import url('./_theme/header__title_theme_dark.css');
+@import url('./_theme/header__title_theme_light.css');
+
+
+.header__title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0;
+  z-index: 6;
+}

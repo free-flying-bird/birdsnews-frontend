@@ -1,0 +1,29 @@
+@import url('./__image/article__image.css');
+@import url('./__title/article__title.css');
+@import url('./__subtitle/article__subtitle.css');
+@import url('./__button/article__button.css');
+@import url('./__source/article__source.css');
+@import url('./__icon/article__icon.css');
+@import url('./__date/article__date.css');
+@import url('./__tag/article__tag.css');
+
+.article {
+  max-width: 400px;
+  max-height: 576px;
+  padding-bottom: 24px;
+  border-radius: 8px;
+  background-color: white;
+  position: relative;
+}
+
+@media screen and (max-width: 720px) {
+  .article {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .article {
+    max-width: 288px;
+  }
+}

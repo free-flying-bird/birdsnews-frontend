@@ -1,0 +1,32 @@
+@import url('./_theme/header__buttom_theme_dark.css');
+@import url('./_theme/header__buttom_theme_light.css');
+@import url('./_disabled/header__button_disabled.css');
+
+.header__button {
+  padding: 10px 10px;
+  box-sizing: border-box;
+  background: none;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  align-items: baseline;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header__button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header__button {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__button {
+    width: 280px;
+  }
+}

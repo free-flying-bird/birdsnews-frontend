@@ -1,0 +1,9 @@
+@import url('./_type/article__icon_type_delete.css');
+@import url('./_type/article__icon_type_like.css');
+@import url('./_type/article__icon_type_is-liked.css');
+
+.article__icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}

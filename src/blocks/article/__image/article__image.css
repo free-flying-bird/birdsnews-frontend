@@ -1,0 +1,7 @@
+.article__image {
+  max-width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-size: contain;
+}
+
