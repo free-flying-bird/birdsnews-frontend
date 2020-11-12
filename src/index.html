@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BirdsNews</title>
     <meta name="description" content="Сайт для поиска и сохранения новостей">
     <meta name="author" content="Святослав Соколов">
@@ -15,7 +16,7 @@
       <a href="./index.html" class="link header__link header__link_theme_dark header__link_state_active">Главная</a>
       <a href="./articles.html" class="link header__link header__link_theme_dark header__link">Сохраненные статьи</a>
       <button class="header__button header__buttom_theme_dark button">Авторизироваться</button>
-      <button class="header__button header__buttom_theme_light button header__button_disabled">Имя<img src="<%=require('./images/logout.svg')%>" class="button__icon"></img></button>
+      <button class="header__button header__buttom_theme_light button header__button_disabled">Имя<img src="<%=require('./images/logout.svg')%>" alt="кнопка выхода" class="button__icon"></button>
     </div>
     <div class="header__menu-wrap link header__menu-wrap_type_open"></div>
   </header>
@@ -86,7 +87,7 @@
       <div class="articles__container">
         <div class="article">
           <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
-          <button class="article__button button article__button_type_like" data-title="Войдите, чтобы сохранять статьи"><div class="article__icon article__icon_type_like"></div></button>
+          <div class="article__button button article__button_type_like" data-title="Войдите, чтобы сохранять статьи"><div class="article__icon article__icon_type_like"></div></div>
           <p class="article__date">2 августа, 2019</p>
           <h3 class="article__title">Национальное достояние – парки</h3>
           <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
@@ -94,7 +95,7 @@
         </div>
         <div class="article">
           <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
-          <button class="article__button button article__button_type_like" data-title="Войдите, чтобы сохранять статьи"><div class="article__icon article__icon_type_like"></div></button>
+          <div class="article__button button article__button_type_like" data-title="Войдите, чтобы сохранять статьи"><div class="article__icon article__icon_type_like"></div></div>
           <p class="article__date">2 августа, 2019</p>
           <h3 class="article__title">Национальное достояние – парки</h3>
           <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
@@ -102,7 +103,7 @@
         </div>
         <div class="article">
           <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
-          <button class="article__button button article__button_type_like" data-title="Войдите, чтобы сохранять статьи"><div class="article__icon article__icon_type_like"></div></button>
+          <div class="article__button button article__button_type_like" data-title="Войдите, чтобы сохранять статьи"><div class="article__icon article__icon_type_like"></div></div>
           <p class="article__date">2 августа, 2019</p>
           <h3 class="article__title">Национальное достояние – парки</h3>
           <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
@@ -123,8 +124,8 @@
     </div>
   </section>
   <footer class="footer">
-    <p class="footer__copyright">&#169 Supersite, Powered by News API</p>
-    <div class="footer__links"><a href="./" class="footer__link link">Главная</p>
+    <p class="footer__copyright">&#169; Supersite, Powered by News API</p>
+    <div class="footer__links"><a href="./" class="footer__link link">Главная</a>
     <a href="https://praktikum.yandex.ru" target="_blank" class="footer__link link">Яндекс.Практикум</a>
   </div>
     <div class="footer__social-icons">
