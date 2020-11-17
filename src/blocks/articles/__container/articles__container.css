@@ -3,10 +3,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 16px;
   grid-column-gap: 16px;
-  margin: 56px 0 0;
+  margin: 0;
+  padding-top: 56px;
   padding-left: 104px;
   padding-right: 104px;
   padding-bottom: 62px;
+  background-color: #E5E5E5;
 }
 
 @media screen and (max-width: 1024px) {

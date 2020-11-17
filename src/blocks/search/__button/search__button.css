@@ -27,6 +27,7 @@
 @media screen and (max-width: 720px) {
   .search__button {
     margin: 16px auto 0;
+    min-width: 100%;
     height: 56px;
     padding: 16px;
   }

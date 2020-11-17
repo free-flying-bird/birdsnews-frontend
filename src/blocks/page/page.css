@@ -3,4 +3,6 @@
   z-index: 1;
   position: relative;
   background-color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
