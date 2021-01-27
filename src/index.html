@@ -10,13 +10,13 @@
     <link rel="icon" href="<%=require('./images/favicon.ico')%>" type="image/png">
 </head>
 <body class="page">
-  <header class="header">
+  <header class="header header_theme_dark">
     <h1 class="header__title header__title_theme_dark">NewsExplorer</h1>
     <div class="header__navigation">
       <a href="./index.html" class="link header__link header__link_theme_dark header__link_state_active">Главная</a>
-      <a href="./articles.html" class="link header__link header__link_theme_dark header__link">Сохраненные статьи</a>
-      <button class="header__button header__buttom_theme_dark button">Авторизироваться</button>
-      <button class="header__button header__buttom_theme_light button header__button_disabled">Имя<img src="<%=require('./images/logout.svg')%>" alt="кнопка выхода" class="button__icon"></button>
+      <a href="./articles.html" class="link header__link header__link_articles header__link_theme_dark header__link hide">Сохраненные статьи</a>
+      <button class="button header__button header__button_type_reg header__button_theme_dark">Авторизироваться</button>
+      <button class="button header__button header__button_theme_dark logout-button hide"><img src="<%=require('./images/logout-white.svg')%>" alt="кнопка выхода" class="button__icon"></button>
     </div>
     <div class="header__menu-wrap link header__menu-wrap_type_open"></div>
   </header>
@@ -33,7 +33,7 @@
         <p class='error popup__password-error'></p>
         <button class="button popup__button popup__button_type_login">Войти</button>
         <p class="popup__alt">или
-          <button class="button popup__alt-button">Зарегистрироваться</button>
+          <button class="button popup__alt-button popup__alt-button_type_reg">Зарегистрироваться</button>
         </p>
       </form>
     </div>
@@ -50,11 +50,11 @@
         <input type="password" name="password" class="popup__input popup__input_type_password" placeholder="Введите пароль" form="reg-form" required minlength="8" maxlength="30">
         <p class='error popup__password-error'></p>
         <p class="popup__subtitle">Имя</p>
-        <input type="text" name="email" class="popup__input popup__input_type_email" placeholder="Введите своё имя" form="reg-form" required minlength="2" maxlength="30">
+        <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Введите своё имя" form="reg-form" required minlength="2" maxlength="30">
         <p class="error popup__name-error"></p>
         <button class="button popup__button popup__button_type_reg">Зарегистрироваться</button>
         <p class="popup__alt">или
-          <button class="button popup__alt-button">Войти</button>
+          <button class="button popup__alt-button popup__alt-button_type_login">Войти</button>
         </p>
       </form>
     </div>
@@ -63,7 +63,13 @@
     <div class="popup__content popup__content_type_success">
       <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close popup__close_type_login">
       <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-      <button class="button popup__alt-button">Войти</button>
+      <button class="button popup__alt-button popup__alt-button_type_success">Войти</button>
+    </div>
+  </div>
+  <div class="popup popup_type_error">
+    <div class="popup__content popup__content_type_error">
+      <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close popup__close_type_login">
+      <h3 class="popup__title popup__title_type_error"></h3>
     </div>
   </div>
   <section class="search">
@@ -76,44 +82,29 @@
       </div>
     </div>
   </section>
-  <section class="preloader preloader_disabled">
+  <section class="preloader hide">
     <div class="circle-preloader"></div>
     <h2 class="preloader__title">Идет поиск новостей...</h2>
   </section>
-  <section class="articles">
-
-    <div class="articles__wrapper">
+  <section class="articles hide">
+  <div class="articles__wrapper">
       <h2 class="articles__title">Результаты поиска</h2>
       <div class="articles__container">
-        <div class="article">
+        <!-- <div class="article">
           <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
           <div class="article__button button article__button_type_like" data-title="Войдите, чтобы сохранять статьи"><div class="article__icon article__icon_type_like"></div></div>
           <p class="article__date">2 августа, 2019</p>
           <h3 class="article__title">Национальное достояние – парки</h3>
           <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
           <a href="https://lenta.ru/" target="_blank" title="лента.ру" class="link article__source">Лента.ру</a>
-        </div>
-        <div class="article">
-          <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
-          <div class="article__button button article__button_type_like" data-title="Войдите, чтобы сохранять статьи"><div class="article__icon article__icon_type_like"></div></div>
-          <p class="article__date">2 августа, 2019</p>
-          <h3 class="article__title">Национальное достояние – парки</h3>
-          <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          <a href="https://lenta.ru/" target="_blank" title="лента.ру" class="link article__source">Лента.ру</a>
-        </div>
-        <div class="article">
-          <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
-          <div class="article__button button article__button_type_like" data-title="Войдите, чтобы сохранять статьи"><div class="article__icon article__icon_type_like"></div></div>
-          <p class="article__date">2 августа, 2019</p>
-          <h3 class="article__title">Национальное достояние – парки</h3>
-          <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          <a href="https://lenta.ru/" target="_blank" title="лента.ру" class="link article__source">Лента.ру</a>
-        </div>
+        </div> -->
+
 
       </div>
-      <button class="button articles__load-button">Показать ещё</button>
+      <button class="button articles__load-button hide">Показать ещё</button>
     </div>
   </section>
+  <div class="result-not-found hide">По вашему запросу ничего не найдено</div>
   <section class="author">
     <img src="<%=require('./images/Avatar.jpg')%>" alt="Фотография автора" class="author__avatar">
     <div class="author__text-content">

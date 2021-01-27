@@ -8,6 +8,7 @@
 @import url('./__subtitle/popup__subtitle.css');
 @import url('./__alt/popup__alt.css');
 @import url('./__alt-button/popup__alt-button.css');
+@import url('./__email-error/popup__email-error.css');
 
 .popup {
   position: fixed;
@@ -19,6 +20,6 @@
   align-items: center;
   justify-content: center;
   display: none;
-  z-index: 3;
+  z-index: 5;
   padding-top: 15px;
 }

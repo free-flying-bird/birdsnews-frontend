@@ -1,7 +1,10 @@
 .article__image {
-  max-width: 100%;
+  width: 100%;
+  min-height: 80px;
+  max-height: 242px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background-size: contain;
+  background-size: cover;
+  object-fit: cover;
 }
 

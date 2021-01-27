@@ -14,7 +14,15 @@
   border-radius: 8px;
   background-color: white;
   position: relative;
+  box-sizing: border-box;
+  display: inline-block;
 }
+
+/* @media screen and (max-width: 1024px) {
+  .article {
+
+  }
+} */
 
 @media screen and (max-width: 720px) {
   .article {

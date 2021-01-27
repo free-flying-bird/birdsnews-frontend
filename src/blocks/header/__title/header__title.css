@@ -1,5 +1,6 @@
 @import url('./_theme/header__title_theme_dark.css');
 @import url('./_theme/header__title_theme_light.css');
+@import url('./_position/header__title_position_fixed.css');
 
 
 .header__title {

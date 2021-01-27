@@ -1,3 +1,5 @@
+@import url('./_type_open/header__navigation_type_open.css');
+
 .header__navigation {
   font-family: Roboto, sans-serif;
   font-size: 18px;
@@ -11,9 +13,8 @@
     right: 0;
     bottom: 50%;
     left: 0;
-    background-color: #1A1B22;
     max-height: 230px;
-    z-index: 0;
+    z-index: -1;
     display: grid;
     grid-template-rows: 56px 56px 56px;
     justify-content: left;
@@ -25,5 +26,6 @@
 @media screen and (max-width: 320px) {
   .header__navigation {
     padding-left: 16px;
+    padding-right: 16px;
   }
 }

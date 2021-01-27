@@ -1,6 +1,6 @@
-@import url('./_theme/header__buttom_theme_dark.css');
-@import url('./_theme/header__buttom_theme_light.css');
 @import url('./_disabled/header__button_disabled.css');
+@import url('./_theme/header__button_theme_dark.css');
+@import url('./_theme/header__button_theme_light.css');
 
 .header__button {
   padding: 10px 10px;

@@ -13,18 +13,18 @@
   <header class="header">
     <h1 class="header__title header__title_theme_light">NewsExplorer</h1>
     <div class="header__navigation">
-      <a href="../" class="link header__link header__link_theme_light">Главная</a>
+      <a href="./" class="link header__link header__link_theme_light">Главная</a>
       <a href="./articles.html" class="link header__link header__link_theme_light header__link_state_active">Сохраненные статьи</a>
-      <button class="header__button header__buttom_theme_light button">Имя<img src="<%=require('./images/logout.svg')%>" alt="кнопка выхода" class="button__icon"></button>
+      <button class="header__button header__button_theme_light button logout-button" onclick="location.href='./index.html'">Выйти<img src="<%=require('./images/logout.svg')%>" alt="кнопка выхода" class="button__icon"></button>
     </div>
-    <div class="header__menu-wrap link header__menu-wrap_type_open"></div>
+    <div class="header__menu-wrap header__menu-wrap_theme_light link header__menu-wrap_type_open"></div>
   </header>
   <section class="articles">
     <p class="articles__subtitle">Сохранённые статьи</p>
-    <h2 class="articles__title">Грета, у вас 5 сохранённых статей</h2>
+    <h2 class="articles__title"></h2>
     <p class="articles__tags">По ключевым словам: <b class="articles__tag">Природа</b>, <b class="articles__tag">Тайга</b> и <b class="articles__tag">2-м другим</b></p>
     <div class="articles__container">
-      <div class="article">
+      <!-- <div class="article">
         <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
         <div class="article__button button"><div class="article__icon article__icon_type_delete"></div></div>
         <p class="article__tag">Природа</p>
@@ -32,45 +32,15 @@
         <h3 class="article__title">Национальное достояние – парки</h3>
         <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
         <a href="https://lenta.ru/" target="_blank" title="лента.ру" class="link article__source">Лента.ру</a>
-      </div>
-      <div class="article">
-        <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
-        <div class="article__button button"><div class="article__icon article__icon_type_delete"></div></div>
-        <p class="article__tag">Природа</p>
-        <p class="article__date">2 августа, 2019</p>
-        <h3 class="article__title">Национальное достояние – парки</h3>
-        <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-        <a href="https://lenta.ru/" target="_blank" title="лента.ру" class="link article__source">Лента.ру</a>
-      </div>
-      <div class="article">
-        <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
-        <div class="article__button button"><div class="article__icon article__icon_type_delete"></div></div>
-        <p class="article__tag">Природа</p>
-        <p class="article__date">2 августа, 2019</p>
-        <h3 class="article__title">Национальное достояние – парки</h3>
-        <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-        <a href="https://lenta.ru/" target="_blank" title="лента.ру" class="link article__source">Лента.ру</a>
-      </div>
-      <div class="article">
-        <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
-        <div class="article__button button"><div class="article__icon article__icon_type_delete"></div></div>
-        <p class="article__tag">Природа</p>
-        <p class="article__date">2 августа, 2019</p>
-        <h3 class="article__title">Национальное достояние – парки</h3>
-        <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-        <a href="https://lenta.ru/" target="_blank" title="лента.ру" class="link article__source">Лента.ру</a>
-      </div>
-      <div class="article">
-        <img src="<%=require('./images/Test-image.png')%>" alt="Картинка статьи" class="article__image">
-        <div class="article__button button"><div class="article__icon article__icon_type_delete"></div></div>
-        <p class="article__tag">Природа</p>
-        <p class="article__date">2 августа, 2019</p>
-        <h3 class="article__title">Национальное достояние – парки</h3>
-        <p class="article__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-        <a href="https://lenta.ru/" target="_blank" title="лента.ру" class="link article__source">Лента.ру</a>
-      </div>
-    </div>
+      </div> -->
 
+      <div class="result-not-found hide">У Вас нет сохраненных статей</div>
+
+    </div>
+  </section>
+  <section class="preloader hide">
+    <div class="circle-preloader"></div>
+    <h2 class="preloader__title">Ожидание новостей...</h2>
   </section>
   <footer class="footer">
     <p class="footer__copyright">&#169; Supersite, Powered by News API</p>

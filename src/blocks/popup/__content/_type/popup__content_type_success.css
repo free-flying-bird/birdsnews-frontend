@@ -1,7 +1,6 @@
 .popup__content.popup__content_type_success {
   display: flex;
   flex-direction: column;
-  min-height: 182px;
   justify-content: space-between;
   align-items: flex-start;
 }

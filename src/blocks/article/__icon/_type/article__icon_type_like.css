@@ -6,5 +6,5 @@
 }
 
 .article__button:hover .article__icon_type_like {
-  background-image: url('../../../../images/like-hover.png');
+  opacity: 1,5;
 }

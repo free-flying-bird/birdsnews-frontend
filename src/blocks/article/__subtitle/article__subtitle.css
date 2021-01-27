@@ -1,5 +1,6 @@
 .article__subtitle {
   max-width: 352px;
+  max-height: 110px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -10,11 +11,15 @@
   margin-top: 16px;
   margin-bottom: 30px;
   margin-right: 24px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow-y: hidden;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .article__subtitle {
     margin-left: 16px;
+    margin-right: 16px;
     margin-top: 10px;
     max-height: 88px;
     overflow-y: hidden;
