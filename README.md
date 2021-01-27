@@ -1,7 +1,9 @@
 ## Frontend for BirdsNews
 ### Version v1.0.1
 ## It's the frontend for website, where you can find and save news articles
-## Pages:
+## Full version of my website:
+### https://www.birdsnews.tk
+## Gh-Pages:
 ### https://sokolik90.github.io/birdsnews-frontend/
 ### https://sokolik90.github.io/birdsnews-frontend/articles.html
 ## How to start:
