@@ -6,7 +6,7 @@ const newsApiUrl = process.env.NODE_ENV === 'development'
 
 const apiUrl = process.env.NODE_ENV === 'development'
   ? 'http://localhost:3000'
-  : 'https://api.birdsnews.ru';
+  : 'https://api.birdsnews.tk';
 
 const apiConfig = {
   url: `${apiUrl}`,
