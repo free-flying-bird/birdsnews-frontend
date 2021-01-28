@@ -18,3 +18,10 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .author__avatar {
+    max-width: 243px;
+    max-height: 243px;
+  }
+}

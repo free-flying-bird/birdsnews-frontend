@@ -10,6 +10,9 @@
   margin-top: 12px;
   margin-bottom: 0;
   margin-right: 24px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 1200px) {
@@ -18,7 +21,7 @@
     line-height: 24px;
     margin-left: 16px;
     margin-right: 16px;
-    overflow-y: hidden;
+    max-height: 141px;
   }
 }
 

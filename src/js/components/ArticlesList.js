@@ -20,7 +20,7 @@ export default class ArticlesList {
     }
     else if (givenArticles) {
       givenArticles.forEach(item => {
-        const article = new Article(item);
+        const article = new Article(item, this.keyword);
         this.articlesContainer.insertAdjacentElement('beforeend', article.create());
         article.setEventListeners();
       })

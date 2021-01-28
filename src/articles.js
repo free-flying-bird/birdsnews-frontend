@@ -67,7 +67,7 @@ mainApi.getArticles()
     if (arr.length > 2) {
       articlesTags.textContent = 'По ключевым словам: '+arr[0]+', '+arr[1]+' и '+(arr.length - 2)+'-м другим';
     }
-    else if (arr.length = 2) {
+    else if (arr.length == 2) {
       articlesTags.textContent = 'По ключевым словам: '+arr[0]+', '+arr[1];
 
     }
