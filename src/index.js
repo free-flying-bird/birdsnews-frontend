@@ -117,7 +117,6 @@ successButton.addEventListener('click', (event) => {
 logoutButton.addEventListener('click', () => {
   mainApi.logout()
       .then((res) => {
-        location.reload();
         return res
       })
       .then(() => {
