@@ -1,0 +1,19 @@
+@import url('./__title/articles__title.css');
+@import url('./__subtitle/articles__subtitle.css');
+@import url('./__tags/articles__tags.css');
+@import url('./__container/articles__container.css');
+@import url('./__load-button/articles__load-button.css');
+@import url('./__wrapper/articles__wrapper.css');
+
+.articles {
+  margin-top: 0px;
+  position: relative;
+  z-index: 3;
+  background-color: white;
+}
+
+@media screen and (max-width: 720px) {
+  .articles {
+    padding-bottom: 30px;
+  }
+}

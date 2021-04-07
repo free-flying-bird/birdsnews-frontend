@@ -1,0 +1,10 @@
+.article__icon_type_like {
+  width: 14px;
+  height: 19px;
+  background-image: url('../../../../images/save.png');
+  color: #E5E5E5;
+}
+
+.article__button:hover .article__icon_type_like {
+  opacity: 1,5;
+}

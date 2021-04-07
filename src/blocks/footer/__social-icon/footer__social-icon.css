@@ -1,0 +1,8 @@
+@import url('./_type/footer__social-icon_type_facebook.css');
+@import url('./_type/footer__social-icon_type_github.css');
+
+.footer__social-icon {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}

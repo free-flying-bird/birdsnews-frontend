@@ -1,0 +1,32 @@
+.article__title {
+  max-width: 352px;
+  font-family: Roboto Slab, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1A1B22;
+  margin-left: 24px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  margin-right: 24px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .article__title {
+    font-size: 22px;
+    line-height: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    max-height: 141px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .article__title {
+    line-height: 26px;
+  }
+}

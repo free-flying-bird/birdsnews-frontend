@@ -1,0 +1,6 @@
+.article__icon_type_is-liked {
+  width: 14px;
+  height: 19px;
+  background-image: url('../../../../images/saved.png');
+  color: #E5E5E5;
+}

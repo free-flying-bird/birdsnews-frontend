@@ -1,0 +1,18 @@
+.articles__wrapper {
+  background-color: #E5E5E5;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  padding-top: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .articles__wrapper {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .articles__wrapper {
+    padding-bottom: 8px;
+  }
+}

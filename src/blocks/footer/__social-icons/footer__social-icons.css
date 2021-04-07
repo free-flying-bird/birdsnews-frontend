@@ -1,0 +1,12 @@
+.footer__social-icons {
+  display: flex;
+  max-width: 68px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 720px) {
+  .footer__social-icons {
+    grid-area: icons;
+  }
+}

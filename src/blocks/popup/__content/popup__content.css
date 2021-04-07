@@ -1,0 +1,24 @@
+@import url('./_type/popup__content_type_success.css');
+
+.popup__content {
+  width: 430px;
+  min-height: max-content;
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 34px 36px;
+  z-index: 5;
+}
+
+@media screen and (max-width: 540px) {
+  .popup__content {
+    width: calc(100% - 60px);
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .popup__content {
+    width: 100%;
+  }
+}

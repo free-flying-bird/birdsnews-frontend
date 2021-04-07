@@ -1,0 +1,26 @@
+.article__button_type_like:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 0;
+  right: calc(100% + 5px);
+  z-index: 2;
+  background-color: #FFFFFF;
+  height: 40px;
+  width: max-content;
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+@media screen and (max-width: 900px) {
+  .article__button_.article__button_type_like:hover::after {
+    max-width: 200%;
+  }
+}

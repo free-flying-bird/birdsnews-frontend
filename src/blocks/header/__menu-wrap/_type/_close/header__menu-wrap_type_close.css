@@ -1,0 +1,6 @@
+.header__menu-wrap.header__menu-wrap_type_close {
+  background-image: url('../../../../../images/close.svg');
+  position: fixed;
+  top: 20px;
+  right: 16px;
+}

@@ -1,0 +1,10 @@
+.article__icon_type_delete {
+  width: 18px;
+  height: 19px;
+  background-image: url('../../../../images/delete-icon.png');
+  color: #E5E5E5;
+  border: none;
+}
+.article__button:hover .article__icon_type_delete {
+  background-image: url('../../../../images/delete-icon.svg');
+}

@@ -1,0 +1,50 @@
+{
+  "name": "birdsnews-frontend",
+  "version": "1.0.1",
+  "description": "Frontend of BirdsNews",
+  "main": "src/pages/main/index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
+    "webpackdev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sokolik90/birdsnews-frontend.git"
+  },
+  "author": "Sviatoslav Sokolov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sokolik90/birdsnews-frontend/issues"
+  },
+  "homepage": "https://github.com/sokolik90/birdsnews-frontend",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "autoprefixer": "^10.0.1",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "cssnano": "^4.1.10",
+    "cssnano-webpack-plugin": "^1.0.3",
+    "gh-pages": "~3.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^0.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss": "^8.1.10",
+    "postcss-loader": "^4.1.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.6.5",
+    "file-loader": "^6.1.0",
+    "image-webpack-loader": "^7.0.1"
+  }
+}

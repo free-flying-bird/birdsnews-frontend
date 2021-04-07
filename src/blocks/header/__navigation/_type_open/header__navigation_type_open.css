@@ -1,0 +1,5 @@
+.header__navigation.header__navigation_type_open {
+  z-index: 5;
+  background-color: #1A1B22;
+  color: white;
+}

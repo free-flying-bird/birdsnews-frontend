@@ -1,0 +1,19 @@
+@import url('./_type/_open/header__menu-wrap_type_open.css');
+@import url('./_type/_close/header__menu-wrap_type_close.css');
+@import url('./_theme/header__menu-wrap_theme_light.css');
+
+.header__menu-wrap {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  display: none;
+  cursor: pointer;
+  align-self: center;
+}
+
+@media screen and (max-width: 720px) {
+  .header__menu-wrap {
+    display: flex;
+    z-index: 5;
+  }
+}

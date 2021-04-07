@@ -1,0 +1,6 @@
+.header__title_position_fixed {
+  position: fixed;
+  left: 16px;
+  top: 20px;
+  color: white;
+}
