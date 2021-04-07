@@ -8,7 +8,8 @@
     "dev": "nodemon app.js",
     "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
     "webpackdev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
-    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist",
+    "deployinproduct": "npm run build && scp -r ./dist/* flyingbird@178.154.226.22:/home/flyingbird/birdsnews-frontend"
   },
   "repository": {
     "type": "git",
